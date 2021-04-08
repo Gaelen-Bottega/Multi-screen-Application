@@ -1,5 +1,5 @@
 ﻿
-namespace Lab5___Nimsith
+namespace Project_Group12
 {
     partial class formTextEditor
     {

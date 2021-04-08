@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab5___Nimsith
+namespace Project_Group12
 {
     public partial class formTextEditor : Form
     {

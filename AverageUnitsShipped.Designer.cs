@@ -1,5 +1,5 @@
 ﻿
-namespace Lab_3___Nimsith
+namespace Project_Group12
 {
     partial class AverageUnitsShipped
     {

@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab_3___Nimsith
+namespace Project_Group12
 {
     public partial class AverageUnitsShipped : System.Windows.Forms.Form
     {
