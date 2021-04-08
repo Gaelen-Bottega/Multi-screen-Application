@@ -1,7 +1,7 @@
 ﻿//Author: Nimsith & Gaelen
 //Project: NETD Project - TextEditor
 //Date: April 8th, 2021
-//Description: This is the final application for NETD where one screen can open a text editor, average units shipped calculator, car list, and an awesomeness application.
+//Description: This is the final application for NETD where one screen can open a text editor, average units shipped calculator, car list, and an awesomeness application...
 
 using System;
 using System.Collections.Generic;
