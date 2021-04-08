@@ -1,7 +1,7 @@
 ﻿
 namespace Project_Group12
 {
-    partial class formTextEditor
+    partial class formMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace Project_Group12
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTextEditor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMain));
             this.menuTop = new System.Windows.Forms.MenuStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

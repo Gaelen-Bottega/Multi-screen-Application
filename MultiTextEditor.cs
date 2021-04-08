@@ -16,9 +16,9 @@ using System.Windows.Forms;
 
 namespace Project_Group12
 {
-    public partial class formTextEditor : Form
+    public partial class formMain : Form
     {
-        public formTextEditor()
+        public formMain()
         {
             InitializeComponent();
         }

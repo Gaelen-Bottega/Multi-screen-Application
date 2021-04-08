@@ -17,7 +17,7 @@ namespace Project_Group12
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formTextEditor());
+            Application.Run(new formMain());
         }
     }
 }
