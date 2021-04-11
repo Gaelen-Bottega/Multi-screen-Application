@@ -25,8 +25,6 @@ namespace Project_Group3
             InitializeComponent();
         }
 
-        string filepath = string.Empty;
-
         /// <summary>
         /// Opens the text editor.
         /// </summary>
@@ -317,11 +315,6 @@ namespace Project_Group3
         private void FileExit(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void FileOpen(object sender, EventArgs e)
-        {
-            
         }
     }
 }

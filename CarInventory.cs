@@ -71,15 +71,20 @@ namespace Project_Group3
                 //Convert.ToDecimal(textBoxPrice.Text)
                 //decimal.Parse(textBoxPrice.Text)
 
-                Car newCarToAdd = new Car(comboBoxMake.Text, textBoxModel.Text, (int)numericUpDownYear.Value, checkBoxNew.Checked, decimal.Parse(textBoxPrice.Text));
+                
                 
                 if (selectedIndex >= 0)
                 {
                     // Replace the old version of that car with the new one!
-                    carList[selectedIndex] = newCarToAdd;
+                    carList[selectedIndex].Make = comboBoxMake.Text;
+                    carList[selectedIndex].Model = textBoxModel.Text;
+                    carList[selectedIndex].Year = (int)numericUpDownYear.Value;
+                    carList[selectedIndex].NewStatus = checkBoxNew.Checked;
+                    carList[selectedIndex].Price = decimal.Parse(textBoxPrice.Text);
                 }
                 else
                 {
+                    Car newCarToAdd = new Car(comboBoxMake.Text, textBoxModel.Text, (int)numericUpDownYear.Value, checkBoxNew.Checked, decimal.Parse(textBoxPrice.Text));
                     // Otherwise, add a car with the entered details to the end of the list.
                     carList.Add(newCarToAdd);
                 }
