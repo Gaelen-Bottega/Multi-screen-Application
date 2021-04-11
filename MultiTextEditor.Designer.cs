@@ -112,6 +112,7 @@ namespace Project_Group3
             this.menuFileNew.Size = new System.Drawing.Size(181, 26);
             this.menuFileNew.Text = "&New";
             this.menuFileNew.ToolTipText = "click to create a new file";
+            this.menuFileNew.Click += new System.EventHandler(this.WindowNewTextEditor);
             // 
             // menuFileOpen
             // 
@@ -122,6 +123,7 @@ namespace Project_Group3
             this.menuFileOpen.Size = new System.Drawing.Size(181, 26);
             this.menuFileOpen.Text = "&Open";
             this.menuFileOpen.ToolTipText = "Click to Open a new File";
+            this.menuFileOpen.Click += new System.EventHandler(this.FileOpen);
             // 
             // toolStripSeparator
             // 
@@ -348,6 +350,7 @@ namespace Project_Group3
             this.toolstripNewFile.Name = "toolstripNewFile";
             this.toolstripNewFile.Size = new System.Drawing.Size(29, 24);
             this.toolstripNewFile.Text = "&New";
+            this.toolstripNewFile.Click += new System.EventHandler(this.WindowNewTextEditor);
             // 
             // toolstripOpenFile
             // 

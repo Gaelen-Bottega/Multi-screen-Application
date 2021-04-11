@@ -84,7 +84,7 @@ namespace Project_Group3
             this.ButtonRightNo.Click += new System.EventHandler(this.HideRight);
             this.ButtonRightNo.MouseEnter += new System.EventHandler(this.HideRight);
             // 
-            // FormAwesomeness
+            // formAwesomeness
             // 
             this.AcceptButton = this.buttonYes;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -96,7 +96,7 @@ namespace Project_Group3
             this.Controls.Add(this.labelAwesomenessPrompt);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormAwesomeness";
+            this.Name = "formAwesomeness";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Awesomeness Detector";

@@ -18,6 +18,8 @@ namespace Project_Group3
 {
     public partial class formMain : Form
     {
+        //This is the filepath of the active file, if applicable.
+        string filepath = string.Empty;
         public formMain()
         {
             InitializeComponent();
@@ -294,6 +296,11 @@ namespace Project_Group3
         private void FileExit(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FileOpen(object sender, EventArgs e)
+        {
+            
         }
     }
 }

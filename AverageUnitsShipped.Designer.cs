@@ -202,7 +202,7 @@ namespace Project_Group3
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(171, 43);
             this.buttonExit.TabIndex = 15;
-            this.buttonExit.Text = "E&xit";
+            this.buttonExit.Text = "&Close";
             this.toolTip1.SetToolTip(this.buttonExit, "Exit Button to exit out of the application");
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.ButtonExitClick);
