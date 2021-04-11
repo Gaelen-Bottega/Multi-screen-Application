@@ -57,10 +57,10 @@ namespace Project_Group3
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(36, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(41, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 27);
+            this.label1.Size = new System.Drawing.Size(71, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma&ke:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -86,36 +86,36 @@ namespace Project_Group3
             "Mazda",
             "Audi",
             "Shelby"});
-            this.comboBoxMake.Location = new System.Drawing.Point(113, 14);
-            this.comboBoxMake.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBoxMake.Location = new System.Drawing.Point(129, 19);
+            this.comboBoxMake.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBoxMake.Name = "comboBoxMake";
-            this.comboBoxMake.Size = new System.Drawing.Size(140, 23);
+            this.comboBoxMake.Size = new System.Drawing.Size(159, 28);
             this.comboBoxMake.TabIndex = 1;
             this.toolTip.SetToolTip(this.comboBoxMake, "Select the Make of the car from the dropdown.");
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(36, 52);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(41, 69);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 27);
+            this.label2.Size = new System.Drawing.Size(71, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "&Model:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxModel
             // 
-            this.textBoxModel.Location = new System.Drawing.Point(113, 54);
-            this.textBoxModel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxModel.Location = new System.Drawing.Point(129, 72);
+            this.textBoxModel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxModel.Name = "textBoxModel";
-            this.textBoxModel.Size = new System.Drawing.Size(140, 23);
+            this.textBoxModel.Size = new System.Drawing.Size(159, 27);
             this.textBoxModel.TabIndex = 3;
             this.toolTip.SetToolTip(this.textBoxModel, "Type in the model of the car.");
             // 
             // numericUpDownYear
             // 
-            this.numericUpDownYear.Location = new System.Drawing.Point(113, 93);
-            this.numericUpDownYear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.numericUpDownYear.Location = new System.Drawing.Point(129, 124);
+            this.numericUpDownYear.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.numericUpDownYear.Maximum = new decimal(new int[] {
             2021,
             0,
@@ -128,7 +128,7 @@ namespace Project_Group3
             0});
             this.numericUpDownYear.Name = "numericUpDownYear";
             this.numericUpDownYear.ReadOnly = true;
-            this.numericUpDownYear.Size = new System.Drawing.Size(141, 23);
+            this.numericUpDownYear.Size = new System.Drawing.Size(161, 27);
             this.numericUpDownYear.TabIndex = 5;
             this.toolTip.SetToolTip(this.numericUpDownYear, "Use the arrows to select the year of the car.");
             this.numericUpDownYear.Value = new decimal(new int[] {
@@ -139,29 +139,29 @@ namespace Project_Group3
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(36, 90);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(41, 120);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 27);
+            this.label3.Size = new System.Drawing.Size(71, 36);
             this.label3.TabIndex = 4;
             this.label3.Text = "&Year:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(113, 132);
-            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxPrice.Location = new System.Drawing.Point(129, 176);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(140, 23);
+            this.textBoxPrice.Size = new System.Drawing.Size(159, 27);
             this.textBoxPrice.TabIndex = 7;
             this.toolTip.SetToolTip(this.textBoxPrice, "Type in the price of the car.");
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(44, 129);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(50, 172);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 27);
+            this.label4.Size = new System.Drawing.Size(62, 36);
             this.label4.TabIndex = 6;
             this.label4.Text = "&Price:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -170,11 +170,11 @@ namespace Project_Group3
             // 
             this.checkBoxNew.AutoSize = true;
             this.checkBoxNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxNew.Location = new System.Drawing.Point(113, 173);
-            this.checkBoxNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.checkBoxNew.Location = new System.Drawing.Point(129, 231);
+            this.checkBoxNew.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.checkBoxNew.Name = "checkBoxNew";
             this.checkBoxNew.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBoxNew.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxNew.Size = new System.Drawing.Size(18, 17);
             this.checkBoxNew.TabIndex = 9;
             this.checkBoxNew.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.toolTip.SetToolTip(this.checkBoxNew, "Check this box if the car is new.");
@@ -182,10 +182,10 @@ namespace Project_Group3
             // 
             // buttonEnter
             // 
-            this.buttonEnter.Location = new System.Drawing.Point(52, 609);
-            this.buttonEnter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonEnter.Location = new System.Drawing.Point(59, 812);
+            this.buttonEnter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonEnter.Name = "buttonEnter";
-            this.buttonEnter.Size = new System.Drawing.Size(88, 27);
+            this.buttonEnter.Size = new System.Drawing.Size(101, 36);
             this.buttonEnter.TabIndex = 12;
             this.buttonEnter.Text = "&Enter";
             this.toolTip.SetToolTip(this.buttonEnter, "Click to enter the car into the list view.");
@@ -195,10 +195,10 @@ namespace Project_Group3
             // buttonReset
             // 
             this.buttonReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonReset.Location = new System.Drawing.Point(163, 609);
-            this.buttonReset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonReset.Location = new System.Drawing.Point(186, 812);
+            this.buttonReset.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(88, 27);
+            this.buttonReset.Size = new System.Drawing.Size(101, 36);
             this.buttonReset.TabIndex = 13;
             this.buttonReset.Text = "&Reset";
             this.toolTip.SetToolTip(this.buttonReset, "Click to reset all entry fields.");
@@ -207,10 +207,10 @@ namespace Project_Group3
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(274, 609);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonExit.Location = new System.Drawing.Point(313, 812);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(88, 27);
+            this.buttonExit.Size = new System.Drawing.Size(101, 36);
             this.buttonExit.TabIndex = 14;
             this.buttonExit.Text = "&Close";
             this.toolTip.SetToolTip(this.buttonExit, "Me close this form.");
@@ -220,20 +220,20 @@ namespace Project_Group3
             // labelOutput
             // 
             this.labelOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelOutput.Location = new System.Drawing.Point(14, 458);
-            this.labelOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelOutput.Location = new System.Drawing.Point(16, 611);
+            this.labelOutput.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(385, 135);
+            this.labelOutput.Size = new System.Drawing.Size(440, 180);
             this.labelOutput.TabIndex = 11;
             this.toolTip.SetToolTip(this.labelOutput, "Display error messages.");
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(61, 174);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(70, 232);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 15);
+            this.label5.Size = new System.Drawing.Size(42, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "&New:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,11 +251,11 @@ namespace Project_Group3
             this.listViewEntries.FullRowSelect = true;
             this.listViewEntries.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewEntries.HideSelection = false;
-            this.listViewEntries.Location = new System.Drawing.Point(14, 200);
-            this.listViewEntries.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.listViewEntries.Location = new System.Drawing.Point(16, 267);
+            this.listViewEntries.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.listViewEntries.MultiSelect = false;
             this.listViewEntries.Name = "listViewEntries";
-            this.listViewEntries.Size = new System.Drawing.Size(384, 254);
+            this.listViewEntries.Size = new System.Drawing.Size(438, 337);
             this.listViewEntries.TabIndex = 10;
             this.toolTip.SetToolTip(this.listViewEntries, "Display a list of all cars.");
             this.listViewEntries.UseCompatibleStateImageBehavior = false;
@@ -294,10 +294,10 @@ namespace Project_Group3
             // CarInventory
             // 
             this.AcceptButton = this.buttonEnter;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonReset;
-            this.ClientSize = new System.Drawing.Size(414, 650);
+            this.ClientSize = new System.Drawing.Size(473, 867);
             this.Controls.Add(this.listViewEntries);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelOutput);
@@ -314,7 +314,7 @@ namespace Project_Group3
             this.Controls.Add(this.comboBoxMake);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CarInventory";

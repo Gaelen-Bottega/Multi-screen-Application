@@ -112,6 +112,7 @@ namespace Project_Group3
             this.menuFileNew.Size = new System.Drawing.Size(150, 26);
             this.menuFileNew.Text = "&New";
             this.menuFileNew.ToolTipText = "click to create a new file";
+            this.menuFileNew.Click += new System.EventHandler(this.WindowNewTextEditor);
             // 
             // menuFileOpen
             // 
@@ -349,6 +350,7 @@ namespace Project_Group3
             this.toolstripNewFile.Name = "toolstripNewFile";
             this.toolstripNewFile.Size = new System.Drawing.Size(24, 24);
             this.toolstripNewFile.Text = "&New";
+            this.toolstripNewFile.Click += new System.EventHandler(this.WindowNewTextEditor);
             // 
             // toolstripOpenFile
             // 
