@@ -146,7 +146,34 @@ namespace Project_Group3
         /// <param name="e"></param>
         private void FileSave(object sender, EventArgs e)
         {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.ActiveMdiChild.GetType() == typeof(formTextEditor))
+                {
+                    formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
+                    textEditorInstance.SaveClick(sender, e);
 
+                }
+                else if (this.ActiveMdiChild.GetType() == typeof(AverageUnitsShipped))
+                {
+                    AverageUnitsShipped UnitsShippedInstance = (AverageUnitsShipped)
+                        this.ActiveMdiChild;
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+                else if (this.ActiveMdiChild.GetType() == typeof(CarInventory))
+                {
+                    CarInventory UnitsShippedInstance = (CarInventory)
+                        this.ActiveMdiChild;
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+                else if (this.ActiveMdiChild.GetType() == typeof(formAwesomeness))
+                {
+                    formAwesomeness UnitsShippedInstance = (formAwesomeness)
+                        this.ActiveMdiChild;
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+
+            }
         }
         /// <summary>
         /// Saves a file to the users computer for the first time. 
@@ -167,8 +194,21 @@ namespace Project_Group3
                 {
                     AverageUnitsShipped UnitsShippedInstance = (AverageUnitsShipped)
                         this.ActiveMdiChild;
-                    UnitsShippedInstance.ButtonEnterClick(sender, e);
-                }       
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+                else if (this.ActiveMdiChild.GetType() == typeof(CarInventory))
+                {
+                    CarInventory UnitsShippedInstance = (CarInventory)
+                        this.ActiveMdiChild;
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+                else if (this.ActiveMdiChild.GetType() == typeof(formAwesomeness))
+                {
+                    formAwesomeness UnitsShippedInstance = (formAwesomeness)
+                        this.ActiveMdiChild;
+                    MessageBox.Show("This application doesn’t support that functionality");
+                }
+
             }
         }
         /// <summary>
@@ -233,6 +273,27 @@ namespace Project_Group3
                     MessageBox.Show("The Help operation is not supported by the current selected window.");
                 }
             }
+        }
+
+        /// <summary>
+        /// This Event Hnadler closes the active Mdi Child one at a time
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FileClose(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+        }
+
+        /// <summary>
+        /// This Event Handler Closes the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FileExit(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

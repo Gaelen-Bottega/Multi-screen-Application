@@ -159,7 +159,7 @@ namespace Project_Group3
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonResetClick(object sender, EventArgs e)
+        public void ButtonResetClick(object sender, EventArgs e)
         {
             ResetForm();
         }
@@ -169,7 +169,7 @@ namespace Project_Group3
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonExitClick(object sender, EventArgs e)
+        public void ButtonExitClick(object sender, EventArgs e)
         {
             Close();
         }
