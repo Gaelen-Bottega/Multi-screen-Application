@@ -23,8 +23,10 @@ namespace Project_Group3
             InitializeComponent();
         }
 
+        string filepath = string.Empty;
+
         /// <summary>
-        /// OPens the text editor.
+        /// Opens the text editor.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -73,6 +75,15 @@ namespace Project_Group3
             awesomenessInstance.MdiParent = this;
             awesomenessInstance.Show();
             awesomenessInstance.Focus();
+        }
+
+        public void FileOpen(object sender, EventArgs e)
+        {
+            formTextEditor textEditorInstance = new formTextEditor();
+            textEditorInstance.MdiParent = this;
+            textEditorInstance.Show();
+            textEditorInstance.Focus();
+            textEditorInstance.FileOpen(sender, e);
         }
 
         /// <summary>
@@ -273,17 +284,27 @@ namespace Project_Group3
                     MessageBox.Show("The Help operation is not supported by the current selected window.");
                 }
             }
+            else
+            {
+                MessageBox.Show("Final Project\n" + "By Nimsith Fernandopulle and Gaelen Rhoads\n\n" + "For NETD 2202" +
+                "\n" + "April 2021", "About this Application");
+            }
         }
 
         /// <summary>
-        /// This Event Hnadler closes the active Mdi Child one at a time
+        /// This Event Handler closes the active Mdi Child one at a time
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void FileClose(object sender, EventArgs e)
+        public void FileClose(object sender, EventArgs e)
         {
             if (ActiveMdiChild != null)
                 ActiveMdiChild.Close();
+        }
+
+        public void CloseTextEditor()
+        {
+            ActiveMdiChild.Close();
         }
 
         /// <summary>

@@ -169,7 +169,7 @@ namespace Project_Group3
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void ButtonExitClick(object sender, EventArgs e)
+        public void ButtonCloseClick(object sender, EventArgs e)
         {
             Close();
         }

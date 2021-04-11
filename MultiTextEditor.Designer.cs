@@ -83,7 +83,7 @@ namespace Project_Group3
             this.menuHelp});
             this.menuTop.Location = new System.Drawing.Point(0, 0);
             this.menuTop.Name = "menuTop";
-            this.menuTop.Size = new System.Drawing.Size(983, 28);
+            this.menuTop.Size = new System.Drawing.Size(983, 24);
             this.menuTop.TabIndex = 0;
             this.menuTop.Text = "menuStrip";
             // 
@@ -99,7 +99,7 @@ namespace Project_Group3
             this.menuFileClose,
             this.menuFileExit});
             this.menuFile.Name = "menuFile";
-            this.menuFile.Size = new System.Drawing.Size(46, 24);
+            this.menuFile.Size = new System.Drawing.Size(37, 20);
             this.menuFile.Text = "&File";
             this.menuFile.ToolTipText = "Options related to file management";
             // 
@@ -109,7 +109,7 @@ namespace Project_Group3
             this.menuFileNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuFileNew.Name = "menuFileNew";
             this.menuFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.menuFileNew.Size = new System.Drawing.Size(181, 26);
+            this.menuFileNew.Size = new System.Drawing.Size(150, 26);
             this.menuFileNew.Text = "&New";
             this.menuFileNew.ToolTipText = "click to create a new file";
             // 
@@ -119,14 +119,15 @@ namespace Project_Group3
             this.menuFileOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuFileOpen.Name = "menuFileOpen";
             this.menuFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.menuFileOpen.Size = new System.Drawing.Size(181, 26);
+            this.menuFileOpen.Size = new System.Drawing.Size(150, 26);
             this.menuFileOpen.Text = "&Open";
             this.menuFileOpen.ToolTipText = "Click to Open a new File";
+            this.menuFileOpen.Click += new System.EventHandler(this.FileOpen);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(147, 6);
             // 
             // menuFileSave
             // 
@@ -134,7 +135,7 @@ namespace Project_Group3
             this.menuFileSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuFileSave.Name = "menuFileSave";
             this.menuFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.menuFileSave.Size = new System.Drawing.Size(181, 26);
+            this.menuFileSave.Size = new System.Drawing.Size(150, 26);
             this.menuFileSave.Text = "&Save";
             this.menuFileSave.ToolTipText = "Click to save the document";
             this.menuFileSave.Click += new System.EventHandler(this.FileSave);
@@ -142,7 +143,7 @@ namespace Project_Group3
             // menuFileSaveAs
             // 
             this.menuFileSaveAs.Name = "menuFileSaveAs";
-            this.menuFileSaveAs.Size = new System.Drawing.Size(181, 26);
+            this.menuFileSaveAs.Size = new System.Drawing.Size(150, 26);
             this.menuFileSaveAs.Text = "Save &As";
             this.menuFileSaveAs.ToolTipText = "Click to find a file location to save the newly created file.";
             this.menuFileSaveAs.Click += new System.EventHandler(this.FileSaveAs);
@@ -150,12 +151,12 @@ namespace Project_Group3
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // menuFileClose
             // 
             this.menuFileClose.Name = "menuFileClose";
-            this.menuFileClose.Size = new System.Drawing.Size(181, 26);
+            this.menuFileClose.Size = new System.Drawing.Size(150, 26);
             this.menuFileClose.Text = "&Close";
             this.menuFileClose.ToolTipText = "Click to close a file";
             this.menuFileClose.Click += new System.EventHandler(this.FileClose);
@@ -163,7 +164,7 @@ namespace Project_Group3
             // menuFileExit
             // 
             this.menuFileExit.Name = "menuFileExit";
-            this.menuFileExit.Size = new System.Drawing.Size(181, 26);
+            this.menuFileExit.Size = new System.Drawing.Size(150, 26);
             this.menuFileExit.Text = "E&xit";
             this.menuFileExit.ToolTipText = "Click to exit the current application";
             this.menuFileExit.Click += new System.EventHandler(this.FileExit);
@@ -175,7 +176,7 @@ namespace Project_Group3
             this.menuEditCopy,
             this.menuEditPaste});
             this.menuEdit.Name = "menuEdit";
-            this.menuEdit.Size = new System.Drawing.Size(49, 24);
+            this.menuEdit.Size = new System.Drawing.Size(39, 20);
             this.menuEdit.Text = "&Edit";
             // 
             // menuEditCut
@@ -184,7 +185,7 @@ namespace Project_Group3
             this.menuEditCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuEditCut.Name = "menuEditCut";
             this.menuEditCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.menuEditCut.Size = new System.Drawing.Size(177, 26);
+            this.menuEditCut.Size = new System.Drawing.Size(144, 22);
             this.menuEditCut.Text = "Cu&t";
             this.menuEditCut.ToolTipText = "Click to remove the current selection and to keep it in the clipboard";
             this.menuEditCut.Click += new System.EventHandler(this.EditCut);
@@ -195,7 +196,7 @@ namespace Project_Group3
             this.menuEditCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuEditCopy.Name = "menuEditCopy";
             this.menuEditCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.menuEditCopy.Size = new System.Drawing.Size(177, 26);
+            this.menuEditCopy.Size = new System.Drawing.Size(144, 22);
             this.menuEditCopy.Text = "&Copy";
             this.menuEditCopy.ToolTipText = "Click to copy selected words ";
             this.menuEditCopy.Click += new System.EventHandler(this.EditCopy);
@@ -206,7 +207,7 @@ namespace Project_Group3
             this.menuEditPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.menuEditPaste.Name = "menuEditPaste";
             this.menuEditPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.menuEditPaste.Size = new System.Drawing.Size(177, 26);
+            this.menuEditPaste.Size = new System.Drawing.Size(144, 22);
             this.menuEditPaste.Text = "&Paste";
             this.menuEditPaste.ToolTipText = "Click to paste the contents in the clipboard";
             this.menuEditPaste.Click += new System.EventHandler(this.EditPaste);
@@ -225,13 +226,13 @@ namespace Project_Group3
             this.windowTextEditor1,
             this.windowTextEditor2});
             this.menuWindow.Name = "menuWindow";
-            this.menuWindow.Size = new System.Drawing.Size(78, 24);
+            this.menuWindow.Size = new System.Drawing.Size(63, 20);
             this.menuWindow.Text = "&Window";
             // 
             // windowCascade
             // 
             this.windowCascade.Name = "windowCascade";
-            this.windowCascade.Size = new System.Drawing.Size(315, 26);
+            this.windowCascade.Size = new System.Drawing.Size(252, 22);
             this.windowCascade.Text = "Cascade";
             this.windowCascade.ToolTipText = "Click to cascade the window";
             this.windowCascade.Click += new System.EventHandler(this.WindowCascade);
@@ -239,7 +240,7 @@ namespace Project_Group3
             // windowTileVertical
             // 
             this.windowTileVertical.Name = "windowTileVertical";
-            this.windowTileVertical.Size = new System.Drawing.Size(315, 26);
+            this.windowTileVertical.Size = new System.Drawing.Size(252, 22);
             this.windowTileVertical.Text = "Tile Vertical";
             this.windowTileVertical.ToolTipText = "Click to Tile Vertically";
             this.windowTileVertical.Click += new System.EventHandler(this.TileVertical);
@@ -247,7 +248,7 @@ namespace Project_Group3
             // windowTileHorizontal
             // 
             this.windowTileHorizontal.Name = "windowTileHorizontal";
-            this.windowTileHorizontal.Size = new System.Drawing.Size(315, 26);
+            this.windowTileHorizontal.Size = new System.Drawing.Size(252, 22);
             this.windowTileHorizontal.Text = "Tile Horizontal";
             this.windowTileHorizontal.ToolTipText = "Click to tile Horizontally";
             this.windowTileHorizontal.Click += new System.EventHandler(this.WindowTileHorizontal);
@@ -255,13 +256,13 @@ namespace Project_Group3
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(312, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(249, 6);
             // 
             // windowCarList
             // 
             this.windowCarList.Name = "windowCarList";
             this.windowCarList.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
-            this.windowCarList.Size = new System.Drawing.Size(315, 26);
+            this.windowCarList.Size = new System.Drawing.Size(252, 22);
             this.windowCarList.Text = "Open Car &List";
             this.windowCarList.ToolTipText = "Click to Open the Car list program";
             this.windowCarList.Click += new System.EventHandler(this.WindowNewCarList);
@@ -270,7 +271,7 @@ namespace Project_Group3
             // 
             this.windowAverageUnits.Name = "windowAverageUnits";
             this.windowAverageUnits.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.windowAverageUnits.Size = new System.Drawing.Size(315, 26);
+            this.windowAverageUnits.Size = new System.Drawing.Size(252, 22);
             this.windowAverageUnits.Text = "Open &Average Units";
             this.windowAverageUnits.ToolTipText = "Click to open the Average units program";
             this.windowAverageUnits.Click += new System.EventHandler(this.WindowNewAverageUnitsShipped);
@@ -279,7 +280,7 @@ namespace Project_Group3
             // 
             this.windowAwesomeness.Name = "windowAwesomeness";
             this.windowAwesomeness.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
-            this.windowAwesomeness.Size = new System.Drawing.Size(315, 26);
+            this.windowAwesomeness.Size = new System.Drawing.Size(252, 22);
             this.windowAwesomeness.Text = "Awesome&ness Application";
             this.windowAwesomeness.ToolTipText = "Click to Open the Awesomeness application";
             this.windowAwesomeness.Click += new System.EventHandler(this.WindowNewAwesomeness);
@@ -287,12 +288,12 @@ namespace Project_Group3
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(312, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(249, 6);
             // 
             // windowTextEditor1
             // 
             this.windowTextEditor1.Name = "windowTextEditor1";
-            this.windowTextEditor1.Size = new System.Drawing.Size(315, 26);
+            this.windowTextEditor1.Size = new System.Drawing.Size(252, 22);
             this.windowTextEditor1.Text = "1 Text Editor 1 - New";
             this.windowTextEditor1.ToolTipText = "Click to Open a new Text Editor";
             this.windowTextEditor1.Click += new System.EventHandler(this.WindowNewTextEditor);
@@ -300,7 +301,7 @@ namespace Project_Group3
             // windowTextEditor2
             // 
             this.windowTextEditor2.Name = "windowTextEditor2";
-            this.windowTextEditor2.Size = new System.Drawing.Size(315, 26);
+            this.windowTextEditor2.Size = new System.Drawing.Size(252, 22);
             this.windowTextEditor2.Text = "2 Text Editor 2 - New";
             this.windowTextEditor2.ToolTipText = "Click to Open another new Text Editor";
             this.windowTextEditor2.Click += new System.EventHandler(this.WindowNewTextEditor);
@@ -310,13 +311,13 @@ namespace Project_Group3
             this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpAbout});
             this.menuHelp.Name = "menuHelp";
-            this.menuHelp.Size = new System.Drawing.Size(55, 24);
+            this.menuHelp.Size = new System.Drawing.Size(44, 20);
             this.menuHelp.Text = "&Help";
             // 
             // helpAbout
             // 
             this.helpAbout.Name = "helpAbout";
-            this.helpAbout.Size = new System.Drawing.Size(142, 26);
+            this.helpAbout.Size = new System.Drawing.Size(116, 22);
             this.helpAbout.Text = "&About...";
             this.helpAbout.ToolTipText = "Click to show the details of the application";
             this.helpAbout.Click += new System.EventHandler(this.Help);
@@ -335,7 +336,7 @@ namespace Project_Group3
             this.toolstripPaste,
             this.toolStripSeparator5,
             this.toolstripHelp});
-            this.toolStrip.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(983, 27);
             this.toolStrip.TabIndex = 2;
@@ -346,7 +347,7 @@ namespace Project_Group3
             this.toolstripNewFile.Image = ((System.Drawing.Image)(resources.GetObject("toolstripNewFile.Image")));
             this.toolstripNewFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripNewFile.Name = "toolstripNewFile";
-            this.toolstripNewFile.Size = new System.Drawing.Size(29, 24);
+            this.toolstripNewFile.Size = new System.Drawing.Size(24, 24);
             this.toolstripNewFile.Text = "&New";
             // 
             // toolstripOpenFile
@@ -355,7 +356,7 @@ namespace Project_Group3
             this.toolstripOpenFile.Image = ((System.Drawing.Image)(resources.GetObject("toolstripOpenFile.Image")));
             this.toolstripOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripOpenFile.Name = "toolstripOpenFile";
-            this.toolstripOpenFile.Size = new System.Drawing.Size(29, 24);
+            this.toolstripOpenFile.Size = new System.Drawing.Size(24, 24);
             this.toolstripOpenFile.Text = "&Open";
             // 
             // toolstripSaveFile
@@ -364,7 +365,7 @@ namespace Project_Group3
             this.toolstripSaveFile.Image = ((System.Drawing.Image)(resources.GetObject("toolstripSaveFile.Image")));
             this.toolstripSaveFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripSaveFile.Name = "toolstripSaveFile";
-            this.toolstripSaveFile.Size = new System.Drawing.Size(29, 24);
+            this.toolstripSaveFile.Size = new System.Drawing.Size(24, 24);
             this.toolstripSaveFile.Text = "&Save";
             this.toolstripSaveFile.Click += new System.EventHandler(this.FileSave);
             // 
@@ -379,7 +380,7 @@ namespace Project_Group3
             this.toolstripCut.Image = ((System.Drawing.Image)(resources.GetObject("toolstripCut.Image")));
             this.toolstripCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripCut.Name = "toolstripCut";
-            this.toolstripCut.Size = new System.Drawing.Size(29, 24);
+            this.toolstripCut.Size = new System.Drawing.Size(24, 24);
             this.toolstripCut.Text = "C&ut";
             this.toolstripCut.Click += new System.EventHandler(this.EditCut);
             // 
@@ -389,7 +390,7 @@ namespace Project_Group3
             this.toolstripCopy.Image = ((System.Drawing.Image)(resources.GetObject("toolstripCopy.Image")));
             this.toolstripCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripCopy.Name = "toolstripCopy";
-            this.toolstripCopy.Size = new System.Drawing.Size(29, 24);
+            this.toolstripCopy.Size = new System.Drawing.Size(24, 24);
             this.toolstripCopy.Text = "&Copy";
             this.toolstripCopy.Click += new System.EventHandler(this.EditCopy);
             // 
@@ -399,7 +400,7 @@ namespace Project_Group3
             this.toolstripPaste.Image = ((System.Drawing.Image)(resources.GetObject("toolstripPaste.Image")));
             this.toolstripPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripPaste.Name = "toolstripPaste";
-            this.toolstripPaste.Size = new System.Drawing.Size(29, 24);
+            this.toolstripPaste.Size = new System.Drawing.Size(24, 24);
             this.toolstripPaste.Text = "&Paste";
             this.toolstripPaste.Click += new System.EventHandler(this.EditPaste);
             // 
@@ -414,7 +415,7 @@ namespace Project_Group3
             this.toolstripHelp.Image = ((System.Drawing.Image)(resources.GetObject("toolstripHelp.Image")));
             this.toolstripHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripHelp.Name = "toolstripHelp";
-            this.toolstripHelp.Size = new System.Drawing.Size(29, 24);
+            this.toolstripHelp.Size = new System.Drawing.Size(24, 24);
             this.toolstripHelp.Text = "He&lp";
             this.toolstripHelp.Click += new System.EventHandler(this.Help);
             // 
@@ -426,8 +427,6 @@ namespace Project_Group3
             this.Controls.Add(this.menuTop);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuTop;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Multi Text Editor";

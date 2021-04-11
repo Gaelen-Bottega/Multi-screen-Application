@@ -176,7 +176,7 @@ namespace Project_Group3
         /// </summary>
         public void UpdateTitle()
         {
-            this.Text = "Nimsith's Whiteboard";
+            this.Text = "Text Editor";
             if(filepath != string.Empty)
             {
                 this.Text += " - " + filepath;

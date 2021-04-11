@@ -205,7 +205,7 @@ namespace Project_Group3
             this.buttonExit.Text = "E&xit";
             this.toolTip1.SetToolTip(this.buttonExit, "Exit Button to exit out of the application");
             this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.ButtonExitClick);
+            this.buttonExit.Click += new System.EventHandler(this.ButtonCloseClick);
             // 
             // labelOutput1
             // 
