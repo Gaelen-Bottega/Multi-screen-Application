@@ -79,11 +79,33 @@ namespace Project_Group3
 
         public void FileOpen(object sender, EventArgs e)
         {
-            formTextEditor textEditorInstance = new formTextEditor();
-            textEditorInstance.MdiParent = this;
-            textEditorInstance.Show();
-            textEditorInstance.Focus();
-            textEditorInstance.FileOpen(sender, e);
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.ActiveMdiChild.GetType() == typeof(formTextEditor))
+                {
+                    formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
+                    textEditorInstance.MdiParent = this;
+                    textEditorInstance.Show();
+                    textEditorInstance.Focus();
+                    textEditorInstance.FileOpen(sender, e);
+                }
+                else
+                {
+                    formTextEditor textEditorInstance = new formTextEditor();
+                    textEditorInstance.MdiParent = this;
+                    textEditorInstance.Show();
+                    textEditorInstance.Focus();
+                    textEditorInstance.FileOpen(sender, e);
+                }
+            }
+            else
+            {
+                formTextEditor textEditorInstance = new formTextEditor();
+                textEditorInstance.MdiParent = this;
+                textEditorInstance.Show();
+                textEditorInstance.Focus();
+                textEditorInstance.FileOpen(sender, e);
+            }
         }
 
         /// <summary>
@@ -106,6 +128,10 @@ namespace Project_Group3
                     MessageBox.Show("The copy operation is not supposted by the current selected window.");
                 }
             }
+            else
+            {
+                MessageBox.Show("The copy operation is not supported with no windows open.");
+            }
         }
         /// <summary>
         /// Cutting stuff from the clipboard, which removes text and using the select you can paste them again
@@ -126,6 +152,10 @@ namespace Project_Group3
                 {
                     MessageBox.Show("The copy operation is not supported by the current selected window.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("The cut operation is not supported with no windows open.");
             }
         }
 
@@ -148,6 +178,10 @@ namespace Project_Group3
                 {
                     MessageBox.Show("The Paste operation is not supported by the current selected window.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("The paste operation is not supported with no windows open.");
             }
         }
         /// <summary>
@@ -184,6 +218,10 @@ namespace Project_Group3
                     MessageBox.Show("This application doesn’t support that functionality");
                 }
 
+            }
+            else
+            {
+                MessageBox.Show("Please open a text editor to perform the save functionality.");
             }
         }
         /// <summary>
@@ -300,11 +338,6 @@ namespace Project_Group3
         {
             if (ActiveMdiChild != null)
                 ActiveMdiChild.Close();
-        }
-
-        public void CloseTextEditor()
-        {
-            ActiveMdiChild.Close();
         }
 
         /// <summary>
