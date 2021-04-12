@@ -79,33 +79,39 @@ namespace Project_Group3
 
         public void FileOpen(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0)
-            {
-                if (this.ActiveMdiChild.GetType() == typeof(formTextEditor))
-                {
-                    formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
-                    textEditorInstance.MdiParent = this;
-                    textEditorInstance.Show();
-                    textEditorInstance.Focus();
-                    textEditorInstance.FileOpen(sender, e);
-                }
-                else
-                {
-                    formTextEditor textEditorInstance = new formTextEditor();
-                    textEditorInstance.MdiParent = this;
-                    textEditorInstance.Show();
-                    textEditorInstance.Focus();
-                    textEditorInstance.FileOpen(sender, e);
-                }
-            }
-            else
-            {
-                formTextEditor textEditorInstance = new formTextEditor();
-                textEditorInstance.MdiParent = this;
-                textEditorInstance.Show();
-                textEditorInstance.Focus();
-                textEditorInstance.FileOpen(sender, e);
-            }
+            formTextEditor textEditorInstance = new formTextEditor();
+            textEditorInstance.MdiParent = this;
+            textEditorInstance.Show();
+            textEditorInstance.Focus();
+            textEditorInstance.FileOpen(sender, e);
+
+            //if (this.MdiChildren.Length > 0)
+            //{
+            //    if (this.ActiveMdiChild.GetType() == typeof(formTextEditor))
+            //    {
+            //        formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
+            //        textEditorInstance.MdiParent = this;
+            //        textEditorInstance.Show();
+            //        textEditorInstance.Focus();
+            //        textEditorInstance.FileOpen(sender, e);
+            //    }
+            //    else
+            //    {
+            //        formTextEditor textEditorInstance = new formTextEditor();
+            //        textEditorInstance.MdiParent = this;
+            //        textEditorInstance.Show();
+            //        textEditorInstance.Focus();
+            //        textEditorInstance.FileOpen(sender, e);
+            //    }
+            //}
+            //else
+            //{
+            //    formTextEditor textEditorInstance = new formTextEditor();
+            //    textEditorInstance.MdiParent = this;
+            //    textEditorInstance.Show();
+            //    textEditorInstance.Focus();
+            //    textEditorInstance.FileOpen(sender, e);
+            //}
         }
 
         /// <summary>

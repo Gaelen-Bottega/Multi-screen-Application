@@ -20,12 +20,26 @@ namespace Project_Group3
     {
         //This is the filepath of the active file, if applicable.
         string filepath = string.Empty;
+
+        bool isUnchanged = true;
         public formTextEditor()
         {
             InitializeComponent();
         }
 
         #region "Event Handlers"
+
+        /// <summary>
+        /// Text has been changed if fired.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextHasChanged(object sender, EventArgs e)
+        {
+            isUnchanged = false;
+            UpdateTitle();
+        }
+
         /// <summary>
         /// THis is used to create a new blank text file
         /// </summary>
@@ -36,14 +50,6 @@ namespace Project_Group3
             textBoxEditor.Clear();
             filepath = string.Empty;
             UpdateTitle();
-        }
-
-        /// <summary>
-        /// Exits the application
-        /// </summary>
-        public void FileExit(object sender, EventArgs e)
-        {
-            Close();
         }
 
         /// <summary>
@@ -58,14 +64,25 @@ namespace Project_Group3
 
             if (openDialog.ShowDialog() == DialogResult.OK)
             {
+                formTextEditor textEditorInstance = new formTextEditor();
+                textEditorInstance = this;
+                textEditorInstance.Show();
+                textEditorInstance.Focus();
                 StreamReader read = new StreamReader(File.OpenRead(openDialog.FileName));
 
                 textBoxEditor.Text = read.ReadToEnd();
                 read.Dispose();
 
                 filepath = openDialog.FileName;
-
+                isUnchanged = true;
                 UpdateTitle();
+            }
+            else
+            {
+                formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
+                textEditorInstance = this;
+                textEditorInstance.Show();
+                textEditorInstance.Close();
             }
         }
 
@@ -138,7 +155,10 @@ namespace Project_Group3
 
                 SaveTextFile(filepath);
 
+                isUnchanged = true;
+
                 UpdateTitle();
+                
             }
 
         }
@@ -158,14 +178,17 @@ namespace Project_Group3
         /// </summary>
         public void ConfirmClose(object sender, FormClosingEventArgs e)
         {
-
+            if (isUnchanged == false)
+            {
                 if (MessageBox.Show("Do you want to save changes to your text?", "My Application",
-                     MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     e.Cancel = true;
-                    FileSaveAs(sender, e);
-                } 
-
+                    SaveClick(sender, e);
+                    MessageBox.Show("File has been saved", "Save Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    e.Cancel = false;
+                }
+            }
         }
 
         #endregion
@@ -181,6 +204,11 @@ namespace Project_Group3
             {
                 this.Text += " - " + filepath;
             }
+
+            if (!isUnchanged)
+            {
+                this.Text += "*";
+            }
         }
 
         /// <summary>
@@ -195,7 +223,11 @@ namespace Project_Group3
             writer.Write(textBoxEditor.Text);
 
             writer.Close();
+            isUnchanged = true;
+            UpdateTitle();
         }
         #endregion
+
+       
     }
 }

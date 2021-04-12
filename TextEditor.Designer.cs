@@ -71,6 +71,7 @@ namespace Project_Group3
             this.textBoxEditor.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxEditor.Size = new System.Drawing.Size(700, 338);
             this.textBoxEditor.TabIndex = 0;
+            this.textBoxEditor.TextChanged += new System.EventHandler(this.TextHasChanged);
             // 
             // contentsToolStripMenuItem
             // 
