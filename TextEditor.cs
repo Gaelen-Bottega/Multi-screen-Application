@@ -79,6 +79,7 @@ namespace Project_Group3
             }
             else
             {
+                // If user cancels the open operation, refer to the open instance and close it.
                 formTextEditor textEditorInstance = (formTextEditor)this.ActiveMdiChild;
                 textEditorInstance = this;
                 textEditorInstance.Show();

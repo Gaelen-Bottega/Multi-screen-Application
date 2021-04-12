@@ -77,12 +77,20 @@ namespace Project_Group3
             awesomenessInstance.Focus();
         }
 
+        /// <summary>
+        /// Creates instance of text editor and calls the FileOpen event handler from the text editor CS file.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void FileOpen(object sender, EventArgs e)
         {
+
+            // Make a new instance of a text editor
             formTextEditor textEditorInstance = new formTextEditor();
             textEditorInstance.MdiParent = this;
             textEditorInstance.Show();
             textEditorInstance.Focus();
+            // Call the open event handler 
             textEditorInstance.FileOpen(sender, e);
 
             //if (this.MdiChildren.Length > 0)
@@ -191,7 +199,7 @@ namespace Project_Group3
             }
         }
         /// <summary>
-        /// Saves a file.
+        /// Saves a file if it is of type text editor.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
